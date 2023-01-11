@@ -46,6 +46,16 @@
         System.Console.WriteLine("Product cost: " + product3.cost);
         System.Console.WriteLine("Product quantityInStock: " + product3.quantityInStock);
 
+        if (product1.cost > product2.cost && product1.cost > product3.cost)
+            System.Console.WriteLine("\nProduct 1 cost is highest.");
+
+        if(product2.cost > product1.cost && product2.cost > product3.cost)
+            System.Console.WriteLine("\nProduct 2 cost is highest.");
+
+        if(product3.cost > product2.cost && product3.cost > product1.cost)
+            System.Console.WriteLine("\nProduct 3 cost is highest.");
+
         System.Console.ReadKey();
     }
+
 }
